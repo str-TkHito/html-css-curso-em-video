@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imagem dinamica</title>
+    </head>
+    <body>
+        <picture>
+            <source media="(max-width: 750px)" srcset="/images/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="/images/foto-m.png" type="image/png">
+            <img src="/images/foto-g.png" alt="Imagem flexivel G">
+        </picture>
+        <h1>Reproduzindo audios</h1>
+        <p>Vamos aprender a adicionar audios</p>
+        <audio preload="metadata" controls loop>
+            <source src="/midia/musica-pop.mp3" type="audio/mpeg">
+            <p>Infelizmente seu navegador não consegue repoduzir audio clique <a href="/midia/musica-pop.mp3" download="musica-pop.mp3">aqui</a></p>
+        </audio>
+    </body>
+</html>
